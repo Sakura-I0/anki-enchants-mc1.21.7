@@ -3,7 +3,7 @@
 	"id": "anki-enchants",
 	"version": "${version}",
 	"name": "Anki Enchants",
-	"description": "Minecraft 1.21.7: Anki Series Enchantments",
+	"description": "Minecraft 1.21.5: Anki Series Enchantments",
 	"authors": [
 		"Me!"
 	],
@@ -34,7 +34,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.7",
+		"minecraft": "~1.21.5",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
