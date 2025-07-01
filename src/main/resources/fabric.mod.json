@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "anki-enchants",
+	"version": "${version}",
+	"name": "Anki Enchants",
+	"description": "Minecraft 1.21.7: Anki Series Enchantments",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/anki-enchants/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.anki.enchants.AnkiEnchants"
+		],
+		"client": [
+			"com.anki.enchants.AnkiEnchantsClient"
+		],
+		"fabric-datagen": [
+			"com.anki.enchants.AnkiEnchantsDataGenerator"
+		]
+	},
+	"mixins": [
+		"anki-enchants.mixins.json",
+		{
+			"config": "anki-enchants.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
